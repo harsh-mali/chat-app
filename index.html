@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus - Modern Messaging Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div class="splash-screen">
+        <div class="splash-content">
+            <div class="splash-logo">NEXUS</div>
+            <div class="splash-subtitle">Connect. Collaborate. Communicate.</div>
+        </div>
+    </div>
+
+    <!-- Main App Container -->
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">NEXUS</div>
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search conversations...">
+                </div>
+            </div>
+            <div class="chat-category">
+                <span>Active Conversations</span>
+                <span class="count">9</span>
+            </div>
+            <div class="chat-list" id="chatList">
+                <!-- Chat items will be inserted here -->
+            </div>
+            <div class="chat-category">
+                <span>Suggested Connections</span>
+            </div>
+            <div class="suggested-people" id="suggestedPeople">
+                <!-- Suggested people will be inserted here -->
+            </div>
+        </div>
+
+        <!-- Main Chat Area -->
+        <div class="main-chat">
+            <div class="chat-header">
+                <div class="chat-info">
+                    <div class="group-avatars">
+                        <!-- Group avatars will be inserted here -->
+                    </div>
+                    <div class="chat-details">
+                        <div class="chat-title">Product Team</div>
+                        <div class="chat-subtitle">5 members • 3 online</div>
+                    </div>
+                </div>
+                <div class="chat-actions">
+                    <button class="action-btn" title="Video Call">
+                        <i class="fas fa-video"></i>
+                    </button>
+                    <button class="action-btn call-btn" title="Voice Call">
+                        <i class="fas fa-phone-alt"></i>
+                    </button>
+                    <button class="action-btn" title="Add Member">
+                        <i class="fas fa-user-plus"></i>
+                    </button>
+                    <button class="action-btn" title="More">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="messages-container" id="messagesContainer">
+                <!-- Messages will be inserted here -->
+            </div>
+            <div class="message-input">
+                <div class="input-container">
+                    <input type="text" id="messageInput" placeholder="Type your message...">
+                    <div class="input-actions">
+                        <button class="action-btn" title="Attach">
+                            <i class="fas fa-paperclip"></i>
+                        </button>
+                        <button class="action-btn" title="Emoji">
+                            <i class="fas fa-smile"></i>
+                        </button>
+                        <button class="action-btn send-btn" title="Send">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 
